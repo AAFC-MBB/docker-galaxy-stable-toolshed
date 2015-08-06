@@ -5,7 +5,7 @@ from common import submit
 
 def main( options ):
 	api_key = options.api
-	url = 'http://localhost:9009/api/categories'
+	url = 'http://192.168.59.103:9009/api/categories'
 	data = dict ( name='A Test Category', description='Drop tests repositories here' )
 	try:
 		response = submit( url, data, api_key )
@@ -19,7 +19,7 @@ def main( options ):
 		data = dict( email=email,
 		             password=password,
 		             username=username )
-		url = 'http://localhost:9009/api/users'
+		url = 'http://192.168.59.103:9009/api/users'
 		try:
 		    response = submit( url, data, api_key )
 		except Exception, e:
