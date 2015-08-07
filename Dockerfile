@@ -22,7 +22,7 @@ RUN sed -i 's|host = 127.0.0.1|#host = 127.0.0.1|g' config/tool_shed.ini
 RUN sed -i 's|^#admin_users.*$|admin_users = toolshed@galaxy.org|' config/tool_shed.ini
 
 RUN cp config/tool_sheds_conf.xml.sample config/tool_sheds_conf.xml
-RUN sed -i '/<tool_sheds>/ a\    <tool_shed name="Local Test Shed" url="http://192.168.59.103:9009/"/>' config/tool_sheds_conf.xml
+RUN sed -i '/<tool_sheds>/ a\    <tool_shed name="Local Test Shed" url="http://localhost:9009/"/>' config/tool_sheds_conf.xml
 
 RUN env -i ./strap_empty_tool_shed.sh
 
