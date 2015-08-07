@@ -8,6 +8,6 @@ must be available in that Tool Shed..
 <user>
     <email>toolshed@galaxy.org</email>
     <password>toolshed</password>
-    <username>toolshed-admin</username>
+    <username>galaxyuser</username>
 </user>
 
